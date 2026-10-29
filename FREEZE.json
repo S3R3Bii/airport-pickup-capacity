@@ -1,0 +1,39 @@
+{
+  "timestamp_utc": "2026-10-29T20:30:48.231747+00:00",
+  "source_commit": "95c4acaccb5b9e1ebc91129f1e846e632acc0032",
+  "held_outcomes_inspected": false,
+  "dependencies": {
+    "PROTOCOL.md": "0b01516e1577ec55af953595dd2f56c6461d2646995e731504261f95f5d9fd43",
+    "protocol.json": "d89e58c38485f1e05d38467b9402506a5579d95356de0901cbb8ef0b2de2aa15",
+    "SOURCES.md": "fa5fcbeb82d388791f8b38c9204c55b2328fc3f8cd0dbd1c5eba20dc5edb10db",
+    "SOURCE_CORRECTION.md": "b4db4b8abf7b852df2102b3a7a34701cfc1feb7588ac00034f5e6377137a4e2d",
+    "SELECTION.json": "ca879e6390a15f901e2e66df83cc4f6c594685aa566a6d46d1219ed97c198e75",
+    "data/README.md": "dfc7f827a49a926ed38a097067317e5a834d6206bb81fb3015586ea8360f7404",
+    "data/source/VERIFICATION.json": "f377b3dc96e9a1c7d97d721aa7d9787ab8070b60b54393e002616834d9f6ea44",
+    "data/source/daily.json": "34ee85912e82398e61c8d5090ccb62e7e5a0db069e534be025b0093d12472f0a",
+    "data/source/hourly.json": "f6b0995bcdaf019c90bf6337d635f80d42239e5a99ed5a1dd65b9fe316b90252",
+    "data/source/hourly_counts.csv.gz": "0656327207d3bdd26eca1a57b837afaa43b63a6419fa345f50d46b15e7ab2646",
+    "data/source/manifest.json": "dd8a1a7211f8f292edfd9a9ab5165cbbbc48b6b29ad2ca907be49ee8075480f8",
+    "data/source/monthly.json": "8c41db07bd5e285c82bcf8ab0741f8689b48e62a2945582a08f50e455f899725",
+    "data/source/outside_year.json": "ff13bf5db39991d60569400ee704a81f98e01f4d162d59c38be4025988253141",
+    "data/source/quality.json": "b05aff2d83a1c38644638e36f0baf0ffa1421f3d7e01b5ab4643c2fb09f89141",
+    "src/ingest.py": "bbf442644c64bdee322681444f43ef50280c52cb7f3bc686244b26e43807ec20",
+    "src/model.py": "3faabb73d1967f061ea23b9c84a4e94579017abc262741a35fcd5a94cb0f05a0",
+    "src/run_analysis.py": "79e1ed3148731eafa9fc66f2f0b118ec7c9c45c5de72a9e6a4c08d4efb518525",
+    "src/verify_freeze.py": "f01013d6ae0d01a839fc3fd779964e9cfa311626416dd8248aa6fa9c4c337d58",
+    "src/verify_results.py": "b892dcb32d2f34f7e7f7a4129788c1f941e520c609d1111b22c0e0f6cce5d2cc",
+    "src/verify_source.py": "7a59e1081838693603e56b067fbd2a07b97a85b6bf98404be77a011a0fddd7d5",
+    "tests/test_policies.py": "d63d541976b1838d90057a06cf14dc1b807db8dca4d658335b106a720c904d73"
+  },
+  "selection": "Three quantile policies and primary winner fixed from July-September; no held policy summaries yet. Source input/quality visible without blinding. Idealized availability only.",
+  "validation": {
+    "status": "PASS",
+    "phase": "validation",
+    "policies": 19,
+    "prediction_rows": 83904,
+    "scenario_metric_rows": 2052,
+    "exact_and_tolerance_checks": 790043,
+    "source_grid_checks": 106538,
+    "availability": "Past-only date indices checked under fixed idealized prior-day availability; actual historical vintages and prospective telemetry not established."
+  }
+}

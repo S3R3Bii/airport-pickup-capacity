@@ -1,7 +1,20 @@
 # Airport-zone pickup capacity
 
-**Current state: fixed retrospective simulation protocol; execution pending.**
+Under a fixed retrospective simulation, the frozen 75th-percentile policy has **4.5% lower primary modeled cost** than the median, but **15.1% higher cost on the two named holiday dates**. Its raw-count error is higher. Capacity and cost assumptions change the policy comparison.
 
-This study will compare median and higher-quantile policies against recorded NYC airport-zone pickup counts under hypothetical excess/unmet service costs. Its practical value is identifying which assumptions need dispatch telemetry and fleet evidence. No result, wait-time benefit or operational readiness is established. Historical public records do not verify real-time availability.
+The practical value is testing assumptions before obtaining dispatch telemetry and fleet evidence. This is conditional on idealized prior-day count availability and hypothetical one-service-per-vehicle-hour capacity. Public historical records do not establish real-time availability, latent demand, physical queues, rider wait times or savings.
 
-Read the [protocol](PROTOCOL.md), [constants](protocol.json) and [source boundaries](SOURCES.md). Independent research program; formal-publication projects remain private.
+Start with the [decision summary and complete primary table](DECISION_SUMMARY.md), then the [protocol](PROTOCOL.md), [frozen selection](FREEZE.json), [source record](data/source/manifest.json), [complete results](results) and [independent manuscript](paper/manuscript.pdf).
+
+![Conditional tradeoff](figures/capacity_tradeoff.png)
+
+```text
+python -m pip install -r requirements.txt
+python -m unittest discover -s tests -v
+python src/check_reproduction.py
+python src/verify_figures.py
+python src/verify_paper.py
+python src/verify_public_package.py
+```
+
+Twelve fixtures; 21 protected dependencies; independent reconstruction of every validation/held prediction and scenario metric; 1,177,457 replay fields/documents; three original figures. Independent program research, not peer reviewed. No operational-readiness or novelty claim. Formal-publication projects including Azure remain private.

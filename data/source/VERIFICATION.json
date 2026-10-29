@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "source_grid_checks": 106538,
+  "grid_rows": 17568,
+  "source_records": 3285485,
+  "excluded_dst_records": 20054,
+  "phase_rows": {
+    "initial": 8688,
+    "validation": 4416,
+    "held": 4368
+  },
+  "quality": "Independent server aggregate controls and SQL grid reconciliation; original individual-record accuracy/completeness and historical vintages unverified"
+}

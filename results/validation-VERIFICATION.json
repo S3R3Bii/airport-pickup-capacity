@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "phase": "validation",
+  "policies": 19,
+  "prediction_rows": 83904,
+  "scenario_metric_rows": 2052,
+  "exact_and_tolerance_checks": 790043,
+  "source_grid_checks": 106538,
+  "availability": "Past-only date indices checked under fixed idealized prior-day availability; actual historical vintages and prospective telemetry not established."
+}

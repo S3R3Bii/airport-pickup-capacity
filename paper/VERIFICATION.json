@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "independent_paper_checks": 289,
+  "displayed_primary_rows": 12,
+  "displayed_stress_rows": 4,
+  "pdf_pages": 5,
+  "pdf_active_content_checks": 4,
+  "scope": "Bounded numeric, claim, approved-hash and action checks; source rights and rendered-page review recorded separately."
+}

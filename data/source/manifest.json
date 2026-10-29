@@ -1,0 +1,84 @@
+{
+  "timestamp_utc": "2026-10-29T20:27:16.566224+00:00",
+  "dataset": "rwwi-khbc",
+  "metadata": {
+    "rowsUpdatedAt": 1787344789,
+    "viewLastModified": 1787345062,
+    "matched_before_after": true
+  },
+  "requests": [
+    {
+      "name": "hourly",
+      "url": "https://data.cityofnewyork.us/resource/rwwi-khbc.json?%24select=date_trunc_ymd%28tpep_pickup_datetime%29+as+day%2Cdate_extract_hh%28tpep_pickup_datetime%29+as+hour%2Cpulocationid+as+zone%2Ccount%28%2A%29+as+n&%24where=tpep_pickup_datetime+%3E%3D+%272024-01-01T00%3A00%3A00%27+AND+tpep_pickup_datetime+%3C+%272025-01-01T00%3A00%3A00%27+AND+pulocationid+in+%28132%2C138%29&%24group=date_trunc_ymd%28tpep_pickup_datetime%29%2Cdate_extract_hh%28tpep_pickup_datetime%29%2Cpulocationid&%24order=day%2Chour%2Czone&%24limit=50000",
+      "parameters": {
+        "$select": "date_trunc_ymd(tpep_pickup_datetime) as day,date_extract_hh(tpep_pickup_datetime) as hour,pulocationid as zone,count(*) as n",
+        "$where": "tpep_pickup_datetime >= '2024-01-01T00:00:00' AND tpep_pickup_datetime < '2025-01-01T00:00:00' AND pulocationid in (132,138)",
+        "$group": "date_trunc_ymd(tpep_pickup_datetime),date_extract_hh(tpep_pickup_datetime),pulocationid",
+        "$order": "day,hour,zone",
+        "$limit": "50000"
+      },
+      "received_utc": "2026-10-29T20:26:04.654539+00:00",
+      "sha256": "a5cc6bb1bcfc3302e4938c09d2d9f4f6708ba22101a0fc5f57068669c5bbcea4",
+      "rows": 16990
+    },
+    {
+      "name": "daily",
+      "url": "https://data.cityofnewyork.us/resource/rwwi-khbc.json?%24select=date_trunc_ymd%28tpep_pickup_datetime%29+as+day%2Cpulocationid+as+zone%2Ccount%28%2A%29+as+n&%24where=tpep_pickup_datetime+%3E%3D+%272024-01-01T00%3A00%3A00%27+AND+tpep_pickup_datetime+%3C+%272025-01-01T00%3A00%3A00%27+AND+pulocationid+in+%28132%2C138%29&%24group=date_trunc_ymd%28tpep_pickup_datetime%29%2Cpulocationid&%24order=day%2Czone&%24limit=2000",
+      "parameters": {
+        "$select": "date_trunc_ymd(tpep_pickup_datetime) as day,pulocationid as zone,count(*) as n",
+        "$where": "tpep_pickup_datetime >= '2024-01-01T00:00:00' AND tpep_pickup_datetime < '2025-01-01T00:00:00' AND pulocationid in (132,138)",
+        "$group": "date_trunc_ymd(tpep_pickup_datetime),pulocationid",
+        "$order": "day,zone",
+        "$limit": "2000"
+      },
+      "received_utc": "2026-10-29T20:26:45.978529+00:00",
+      "sha256": "6e368f3c3f50cf74311e93747a5607002ba73c34ea6f6e84523b14274d97b9b2",
+      "rows": 732
+    },
+    {
+      "name": "monthly",
+      "url": "https://data.cityofnewyork.us/resource/rwwi-khbc.json?%24select=date_extract_m%28tpep_pickup_datetime%29+as+month%2Cpulocationid+as+zone%2Ccount%28%2A%29+as+n&%24where=tpep_pickup_datetime+%3E%3D+%272024-01-01T00%3A00%3A00%27+AND+tpep_pickup_datetime+%3C+%272025-01-01T00%3A00%3A00%27+AND+pulocationid+in+%28132%2C138%29&%24group=date_extract_m%28tpep_pickup_datetime%29%2Cpulocationid&%24order=month%2Czone&%24limit=100",
+      "parameters": {
+        "$select": "date_extract_m(tpep_pickup_datetime) as month,pulocationid as zone,count(*) as n",
+        "$where": "tpep_pickup_datetime >= '2024-01-01T00:00:00' AND tpep_pickup_datetime < '2025-01-01T00:00:00' AND pulocationid in (132,138)",
+        "$group": "date_extract_m(tpep_pickup_datetime),pulocationid",
+        "$order": "month,zone",
+        "$limit": "100"
+      },
+      "received_utc": "2026-10-29T20:26:53.244806+00:00",
+      "sha256": "f2094df3d359de3b95a768300a6f05805b5c59b831e00f5d6292193a0998c96f",
+      "rows": 24
+    },
+    {
+      "name": "quality",
+      "url": "https://data.cityofnewyork.us/resource/rwwi-khbc.json?%24select=count%28%2A%29+as+records%2Ccount%28tpep_pickup_datetime%29+as+dated_records%2Ccount%28pulocationid%29+as+zoned_records%2Cmin%28date_trunc_ymd%28tpep_pickup_datetime%29%29+as+earliest_day%2Cmax%28date_trunc_ymd%28tpep_pickup_datetime%29%29+as+latest_day",
+      "parameters": {
+        "$select": "count(*) as records,count(tpep_pickup_datetime) as dated_records,count(pulocationid) as zoned_records,min(date_trunc_ymd(tpep_pickup_datetime)) as earliest_day,max(date_trunc_ymd(tpep_pickup_datetime)) as latest_day"
+      },
+      "received_utc": "2026-10-29T20:29:50.308929+00:00",
+      "sha256": "d52a542c3b3ce382d117bdf76126e541a547e5fab40dbb1ffcdf1a6c0c143f23",
+      "rows": 1
+    },
+    {
+      "name": "outside_year",
+      "url": "https://data.cityofnewyork.us/resource/rwwi-khbc.json?%24select=count%28%2A%29+as+n&%24where=tpep_pickup_datetime+%3C+%272024-01-01T00%3A00%3A00%27+OR+tpep_pickup_datetime+%3E%3D+%272025-01-01T00%3A00%3A00%27",
+      "parameters": {
+        "$select": "count(*) as n",
+        "$where": "tpep_pickup_datetime < '2024-01-01T00:00:00' OR tpep_pickup_datetime >= '2025-01-01T00:00:00'"
+      },
+      "received_utc": "2026-10-29T20:27:15.612138+00:00",
+      "sha256": "ff13bf5db39991d60569400ee704a81f98e01f4d162d59c38be4025988253141",
+      "rows": 1
+    }
+  ],
+  "grid_rows": 17568,
+  "observed_groups": 16990,
+  "zero_filled_groups": 578,
+  "airport_records": 3285485,
+  "excluded_dst_records": 20054,
+  "selected_sha256": "0656327207d3bdd26eca1a57b837afaa43b63a6419fa345f50d46b15e7ab2646",
+  "source_reconciliation_checks": 85706,
+  "original_trip_records_retrieved": false,
+  "scope": "Published count aggregates only in public projection. Initial all-city quality query included exact minimum/maximum timestamp extrema; that private response is retained but not published. Corrected query and public quality output use day-only extrema before source publication. No individual trip records, IDs, fares or passenger/dropoff fields were requested. Historical real-time availability and completeness remain unverified.",
+  "quality_query_correction": "Only diagnostic temporal resolution changed; hourly count bytes, model histories and all numerical policy outcomes unchanged."
+}

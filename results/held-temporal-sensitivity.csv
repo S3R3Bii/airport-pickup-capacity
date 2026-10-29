@@ -1,0 +1,7 @@
+comparison,kind,period,cost_difference,n,mean_difference_exact
+winner_minus_median,month,2024-10,-12409,1488,-12409/1488
+winner_minus_median,month,2024-11,-6080,1392,-380/87
+winner_minus_median,month,2024-12,-11362,1488,-5681/744
+winner_minus_median,leave_one_month_out,2024-10,-17442,2880,-969/160
+winner_minus_median,leave_one_month_out,2024-11,-23771,2976,-23771/2976
+winner_minus_median,leave_one_month_out,2024-12,-18489,2880,-6163/960
