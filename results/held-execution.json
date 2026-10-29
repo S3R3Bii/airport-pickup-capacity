@@ -1,0 +1,30 @@
+[
+  {
+    "policy": "weekday_hour-w84-q1_2",
+    "started_utc": "2026-10-29T20:30:53.956957+00:00",
+    "elapsed_seconds": 0.12765529996249825,
+    "status": "COMPUTED",
+    "seed": null
+  },
+  {
+    "policy": "weekday_hour-w84-q3_4",
+    "started_utc": "2026-10-29T20:30:54.084397+00:00",
+    "elapsed_seconds": 0.12725720007438213,
+    "status": "COMPUTED",
+    "seed": null
+  },
+  {
+    "policy": "weekday_hour-w84-q9_10",
+    "started_utc": "2026-10-29T20:30:54.211672+00:00",
+    "elapsed_seconds": 0.12885889993049204,
+    "status": "COMPUTED",
+    "seed": null
+  },
+  {
+    "policy": "previous_available_week",
+    "started_utc": "2026-10-29T20:30:54.340079+00:00",
+    "elapsed_seconds": 0.042404200066812336,
+    "status": "COMPUTED",
+    "seed": null
+  }
+]
