@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "dataset": "rwwi-khbc",
+  "source_year": 2024,
+  "zones": {
+    "132": "JFK Airport",
+    "138": "LaGuardia Airport"
+  },
+  "start": "2024-01-01",
+  "end_exclusive": "2025-01-01",
+  "validation_start": "2024-07-01",
+  "held_start": "2024-10-01",
+  "excluded_civil_dates": [
+    "2024-03-10",
+    "2024-11-03"
+  ],
+  "stress_dates": [
+    "2024-11-28",
+    "2024-12-25"
+  ],
+  "windows_days": [
+    28,
+    56,
+    84
+  ],
+  "calendar_groups": [
+    "weekday_hour",
+    "daytype_hour"
+  ],
+  "quantiles": [
+    "1/2",
+    "3/4",
+    "9/10"
+  ],
+  "min_history": 3,
+  "capacity_caps": [
+    100,
+    250,
+    500
+  ],
+  "underage_costs": [
+    1,
+    3,
+    9
+  ],
+  "overage_cost": 1,
+  "primary_capacity_cap": 250,
+  "primary_underage_cost": 3,
+  "tie_order": [
+    "total validation cost",
+    "daytype_hour before weekday_hour",
+    "shorter window",
+    "smaller quantile"
+  ],
+  "baseline": "Most recent available same-weekday/hour count in preceding28days; excluded civil dates are not used.",
+  "source_availability": "Idealized complete prior-day count availability for retrospective simulation only; actual historical public vintages and prospective dispatch telemetry are unavailable.",
+  "seed": null,
+  "selection": "For each quantile select calendar/window by pooled July-September primary capped cost; select primary winner among those three using same rule. Freeze before held outcomes. No other tuning."
+}
