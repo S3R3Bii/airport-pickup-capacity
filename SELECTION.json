@@ -1,0 +1,48 @@
+{
+  "primary_winner": "weekday_hour-w84-q3_4",
+  "selected_policies": [
+    {
+      "id": "weekday_hour-w84-q1_2",
+      "group": "weekday_hour",
+      "window": 84,
+      "q": "1/2"
+    },
+    {
+      "id": "weekday_hour-w84-q3_4",
+      "group": "weekday_hour",
+      "window": 84,
+      "q": "3/4"
+    },
+    {
+      "id": "weekday_hour-w84-q9_10",
+      "group": "weekday_hour",
+      "window": 84,
+      "q": "9/10"
+    }
+  ],
+  "primary_cap": 250,
+  "primary_under_cost": 3,
+  "validation_targets_per_policy": 4416,
+  "candidate_primary_costs": {
+    "daytype_hour-w28-q1_2": 705827,
+    "daytype_hour-w28-q3_4": 648738,
+    "daytype_hour-w28-q9_10": 661248,
+    "daytype_hour-w56-q1_2": 704522,
+    "daytype_hour-w56-q3_4": 652407,
+    "daytype_hour-w56-q9_10": 664718,
+    "daytype_hour-w84-q1_2": 701817,
+    "daytype_hour-w84-q3_4": 654698,
+    "daytype_hour-w84-q9_10": 665911,
+    "previous_available_week": 711121,
+    "weekday_hour-w28-q1_2": 707248,
+    "weekday_hour-w28-q3_4": 650755,
+    "weekday_hour-w28-q9_10": 649986,
+    "weekday_hour-w56-q1_2": 690766,
+    "weekday_hour-w56-q3_4": 642478,
+    "weekday_hour-w56-q9_10": 666607,
+    "weekday_hour-w84-q1_2": 681352,
+    "weekday_hour-w84-q3_4": 642128,
+    "weekday_hour-w84-q9_10": 645899
+  },
+  "selection": "Fixed exact pooled validation cost and declared tie order; no held summaries used."
+}

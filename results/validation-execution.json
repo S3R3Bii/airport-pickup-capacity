@@ -1,0 +1,135 @@
+[
+  {
+    "policy": "weekday_hour-w28-q1_2",
+    "started_utc": "2026-10-29T20:28:08.569296+00:00",
+    "elapsed_seconds": 0.05235429992899299,
+    "status": "COMPUTED",
+    "seed": null
+  },
+  {
+    "policy": "weekday_hour-w56-q1_2",
+    "started_utc": "2026-10-29T20:28:08.622340+00:00",
+    "elapsed_seconds": 0.09116140007972717,
+    "status": "COMPUTED",
+    "seed": null
+  },
+  {
+    "policy": "weekday_hour-w84-q1_2",
+    "started_utc": "2026-10-29T20:28:08.713210+00:00",
+    "elapsed_seconds": 0.1306075999746099,
+    "status": "COMPUTED",
+    "seed": null
+  },
+  {
+    "policy": "daytype_hour-w28-q1_2",
+    "started_utc": "2026-10-29T20:28:08.843413+00:00",
+    "elapsed_seconds": 0.06537399999797344,
+    "status": "COMPUTED",
+    "seed": null
+  },
+  {
+    "policy": "daytype_hour-w56-q1_2",
+    "started_utc": "2026-10-29T20:28:08.909477+00:00",
+    "elapsed_seconds": 0.11930000002030283,
+    "status": "COMPUTED",
+    "seed": null
+  },
+  {
+    "policy": "daytype_hour-w84-q1_2",
+    "started_utc": "2026-10-29T20:28:09.027617+00:00",
+    "elapsed_seconds": 0.16704099997878075,
+    "status": "COMPUTED",
+    "seed": null
+  },
+  {
+    "policy": "weekday_hour-w28-q3_4",
+    "started_utc": "2026-10-29T20:28:09.195188+00:00",
+    "elapsed_seconds": 0.05203519994392991,
+    "status": "COMPUTED",
+    "seed": null
+  },
+  {
+    "policy": "weekday_hour-w56-q3_4",
+    "started_utc": "2026-10-29T20:28:09.247300+00:00",
+    "elapsed_seconds": 0.08908130007330328,
+    "status": "COMPUTED",
+    "seed": null
+  },
+  {
+    "policy": "weekday_hour-w84-q3_4",
+    "started_utc": "2026-10-29T20:28:09.337086+00:00",
+    "elapsed_seconds": 0.13490779988933355,
+    "status": "COMPUTED",
+    "seed": null
+  },
+  {
+    "policy": "daytype_hour-w28-q3_4",
+    "started_utc": "2026-10-29T20:28:09.471496+00:00",
+    "elapsed_seconds": 0.06498220004141331,
+    "status": "COMPUTED",
+    "seed": null
+  },
+  {
+    "policy": "daytype_hour-w56-q3_4",
+    "started_utc": "2026-10-29T20:28:09.536682+00:00",
+    "elapsed_seconds": 0.11618729995097965,
+    "status": "COMPUTED",
+    "seed": null
+  },
+  {
+    "policy": "daytype_hour-w84-q3_4",
+    "started_utc": "2026-10-29T20:28:09.653047+00:00",
+    "elapsed_seconds": 0.1671216000104323,
+    "status": "COMPUTED",
+    "seed": null
+  },
+  {
+    "policy": "weekday_hour-w28-q9_10",
+    "started_utc": "2026-10-29T20:28:09.819976+00:00",
+    "elapsed_seconds": 0.05317680002190173,
+    "status": "COMPUTED",
+    "seed": null
+  },
+  {
+    "policy": "weekday_hour-w56-q9_10",
+    "started_utc": "2026-10-29T20:28:09.872514+00:00",
+    "elapsed_seconds": 0.0918591000372544,
+    "status": "COMPUTED",
+    "seed": null
+  },
+  {
+    "policy": "weekday_hour-w84-q9_10",
+    "started_utc": "2026-10-29T20:28:09.964618+00:00",
+    "elapsed_seconds": 0.13797279994469136,
+    "status": "COMPUTED",
+    "seed": null
+  },
+  {
+    "policy": "daytype_hour-w28-q9_10",
+    "started_utc": "2026-10-29T20:28:10.102883+00:00",
+    "elapsed_seconds": 0.06692600005771965,
+    "status": "COMPUTED",
+    "seed": null
+  },
+  {
+    "policy": "daytype_hour-w56-q9_10",
+    "started_utc": "2026-10-29T20:28:10.169986+00:00",
+    "elapsed_seconds": 0.11877029994502664,
+    "status": "COMPUTED",
+    "seed": null
+  },
+  {
+    "policy": "daytype_hour-w84-q9_10",
+    "started_utc": "2026-10-29T20:28:10.288857+00:00",
+    "elapsed_seconds": 0.16773380001541227,
+    "status": "COMPUTED",
+    "seed": null
+  },
+  {
+    "policy": "previous_available_week",
+    "started_utc": "2026-10-29T20:28:10.456277+00:00",
+    "elapsed_seconds": 0.04268159996718168,
+    "status": "COMPUTED",
+    "seed": null
+  }
+]
